@@ -9,7 +9,7 @@ script:
   - python -m unittest discover
   - coverage erase
   - coverage run -m pytest && coverage html
-  - pylint --output-format=text main.py
+#  - pylint --output-format=text main.py --disable=C0103
 
 after_success:
   - codecov
